@@ -166,3 +166,33 @@
     color: var(--clr-brand-500);
   }
 }
+
+@layer layout {
+  .wrapper {
+    --wrapper-max-width: 1130px;
+    --wrapper-padding-inline: 1rem;
+    max-width: var(--wrapper-max-width);
+    margin-inline: auto;
+    padding-inline: var(--wrapper-padding-inline);
+    /* for matching width of figma */
+    box-sizing: content-box;
+    &[data-width="narrow"] {
+      --wrapper-max-width: 720px;
+    }
+    &[data-width="wide"] {
+      --wrapper-max-width: 1330px;
+    }
+  }
+}
+
+@layer utilities {
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
