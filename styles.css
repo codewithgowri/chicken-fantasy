@@ -177,7 +177,7 @@
   }
   .grid-flow {
     display: grid;
-    gap: 1em;
+    gap: var(--grid-flow-space, 1rem);
   }
 
   .wrapper {
@@ -223,6 +223,24 @@
       align-items: center;
     }
   }
+  .site-footer {
+    padding-block: 2rem;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: var(--text-main);
+
+      &:hover,
+      &:focus-visible {
+        color: var(--text-brand-light);
+      }
+    }
+  }
+  .site-footer__title {
+    font-size: var(--font-size-md);
+    font-family: var(--ff-heading);
+    font-weight: 700;
+  }
 }
 
 @layer components {
@@ -259,6 +277,35 @@
     }
     a {
       text-decoration: none;
+    }
+  }
+  .card {
+    background-color: var(--background-light);
+    padding: 1em;
+    border-radius: var(--border-radius-3);
+    display: grid;
+    gap: 1em;
+    img {
+      border-radius: var(--border-radius-2);
+    }
+  }
+  .card__title {
+    color: var(--card-title-color, var(--text-brand));
+    font-size: var(--font-size-heading-sm);
+  }
+  .button {
+    background-color: var(--background-accent);
+    text-decoration: none;
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+    font-family: var(--ff-heading);
+    font-weight: 700;
+    &:hover,
+    &:focus-visible {
+      background-color: var(--background-accent-light);
+      color: var(--text-high-contrast);
     }
   }
 }
@@ -313,10 +360,5 @@
   }
   .font-size-lg {
     font-size: var(--font-size-lg);
-  }
-  .card {
-    background-color: var(--background-light);
-    padding: 1em;
-    border-radius: var(--border-radius-2);
   }
 }

@@ -58,8 +58,8 @@
         </div>
       </section>
       <section class="section">
-        <div class="wrapper grid-flow">
-          <div class="flow">
+        <div class="wrapper grid-flow" style="--grid-flow-space: 2rem">
+          <div class="flow font-size-lg">
             <h2 class="section-heading">The joys of mushroom foraging</h2>
             <p>
               Foraging for mushrooms can be a rewarding experience for many
@@ -69,13 +69,13 @@
               culinary treasure.
             </p>
           </div>
-          <div class="equal-columns">
-            <article class="card grid-flow">
+          <div class="equal-columns" data-gap="large">
+            <article class="card">
               <img
                 src="./fungi-finders-assets-and-designs-final/assets/outdoor-exploration.webp"
                 alt=""
               />
-              <h2>Outdoor Exploration</h2>
+              <h2 class="card__title">Outdoor Exploration</h2>
               <p>
                 Mushroom foraging takes you off the beaten path and into the
                 heart of nature. Learn to read the landscape, identifying prime
@@ -84,12 +84,12 @@
                 for exciting discoveries around every tree and under every log.
               </p>
             </article>
-            <article class="card grid-flow">
+            <article class="card">
               <img
                 src="./fungi-finders-assets-and-designs-final/assets/botanical-expertise.webp"
                 alt=""
               />
-              <h2>Botanical Expertise</h2>
+              <h2 class="card__title">Botanical Expertise</h2>
               <p>
                 Dive into the intricate world of fungal biology. Discover the
                 unique structures of mushrooms, from caps to gills to spores.
@@ -99,12 +99,12 @@
                 ecosystem health.
               </p>
             </article>
-            <article class="card grid-flow">
+            <article class="card">
               <img
                 src="./fungi-finders-assets-and-designs-final/assets/culinary-delight.webp"
                 alt=""
               />
-              <h2>Culinary Delights</h2>
+              <h2 class="card__title">Culinary Delights</h2>
               <p>
                 Transform your foraged finds into delectable dishes. Many edible
                 mushrooms offer unique flavors and textures that can elevate
@@ -155,7 +155,12 @@
               <strong>we’ve got a handy reference guide</strong>
               to help you out!
             </p>
-            <button>Reference Guide</button>
+            <a class="button" href="#"
+              ><span class="visually-hidden"
+                >Get to know your mushrooms by using our handy</span
+              >
+              Reference Guide</a
+            >
           </div>
         </div>
       </section>
@@ -173,7 +178,7 @@
               mushrooms with fellow enthusiasts.
             </p>
 
-            <a href="#"
+            <a href="#" class="button"
               >Learn More
 
               <span class="visually-hidden">
@@ -188,10 +193,10 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="wrapper" data-width="wide">
-        <h3>Happy Foraging!</h3>
-        <p>contact@fungifinders.com</p>
+    <footer class="site-footer">
+      <div class="grid-flow" style="--grid-flow-space: 2rem" data-width="wide">
+        <h3 class="site-footer__title">Happy Foraging!</h3>
+        <a href="mailto:contact@fungifinders.com">contact@fungifinders.com</a>
       </div>
     </footer>
   </body>
