@@ -5,145 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chicken Fantasy</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="wrapper" data-width="wide">
-      <img
-        src="./fungi-finders-assets-and-designs-final/assets/fungi-finders.svg"
-        alt=""
-      />
-      <nav>
-        <ul>
-          <a href="#"> <li>Discover</li> </a
-          ><a href="#"> <li>Chicken Guide</li> </a
-          ><a href="#">
-            <li>FAQ</li>
-          </a>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="wrapper" data-width="wide">
+        <div class="site-header__inner">
+          <img
+            src="./fungi-finders-assets-and-designs-final/assets/fungi-finders.svg"
+            alt=""
+          />
+          <nav class="primary-navigation">
+            <ul>
+              <a href="#"> <li>Discover</li> </a
+              ><a href="#"> <li>Chicken Guide</li> </a
+              ><a href="#">
+                <li>FAQ</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="hero wrapper">
-        <h1>Discover the World of Mushroom Foraging</h1>
-        <p>
-          Mushroom foraging is the art and science of identifying and collecting
-          wild mushrooms.
-        </p>
-        <p>
-          It's a practice that combines outdoor exploration botanical knowledge,
-          and culinary adventure. Foragers venture into forests, fields, and
-          even urban green spaces to discover these hidden treasures.
-        </p>
-        <p>
-          But beware – this hobby requires careful study and respect for nature,
-          as some mushrooms can be dangerous if misidentified.
-        </p>
-      </section>
-      <section class="wrapper">
-        <h1>The joys of mushroom foraging</h1>
-        <p>
-          Foraging for mushrooms can be a rewarding experience for many reasons.
-          People may venture off into the woods to forage for mushrooms because
-          it allows them to connect with nature, enjoy the thrill of the hunt,
-          and savor the satisfaction of finding a hidden culinary treasure.
-        </p>
-        <article>
-          <img
-            src="./fungi-finders-assets-and-designs-final/assets/outdoor-exploration.webp"
-            alt=""
-          />
-          <h2>Outdoor Exploration</h2>
-          <p>
-            Mushroom foraging takes you off the beaten path and into the heart
-            of nature. Learn to read the landscape, identifying prime mushroom
-            habitats from lush forest floors to sun-dappled meadows. Every
-            expedition is a new adventure, with the potential for exciting
-            discoveries around every tree and under every log.
-          </p>
-        </article>
-        <article>
-          <img
-            src="./fungi-finders-assets-and-designs-final/assets/botanical-expertise.webp"
-            alt=""
-          />
-          <h2>Botanical Expertise</h2>
-          <p>
-            Dive into the intricate world of fungal biology. Discover the unique
-            structures of mushrooms, from caps to gills to spores. Learn to use
-            field guides and identification keys to distinguish between species.
-            With practice, you'll start to see the forest in a whole new light,
-            recognizing the vital role fungi play in ecosystem health.
-          </p>
-        </article>
-        <article>
-          <img
-            src="./fungi-finders-assets-and-designs-final/assets/culinary-delight.webp"
-            alt=""
-          />
-          <h2>Culinary Delights</h2>
-          <p>
-            Transform your foraged finds into delectable dishes. Many edible
-            mushrooms offer unique flavors and textures that can elevate your
-            cooking. From the earthy porcini to the delicate chanterelle, each
-            variety brings its own character to the table. Explore recipes,
-            preservation techniques, and the joy of cooking with nature's
-            bounty.
-          </p>
-        </article>
-      </section>
-      <section class="wrapper" data-width="narrow">
-        <h1>Start your Foraging Adventure!</h1>
-        <p>
-          Whether you're seeking a deeper connection with nature, a new outdoor
-          hobby, or simply love the idea of finding your own food, mushroom
-          foraging offers a uniquely rewarding experience.
-        </p>
-      </section>
-      <section class="wrapper" data-width="wide">
-        <img
-          src="./fungi-finders-assets-and-designs-final/assets/get-to-know.webp"
-          alt=""
-        />
-        <div>
-          <h2>Get to know your mushrooms</h2>
-          <p>
-            Successful and safe mushroom foraging begins with a deep
-            understanding of the species you'll encounter in the wild - not just
-            what the edible ones look like, but their toxic look-alikes,
-            seasonal patterns, and preferred habitats.
-          </p>
-          <p>
-            It can feel like a big task, but we’ve got a handy reference guide
-            to help you out!
-          </p>
-          <button>Reference Guide</button>
+      <section class="section hero" data-padding="compact">
+        <div class="wrapper">
+          <div class="flow">
+            <h1 class="hero__title">
+              Discover the World of
+              <span>Mushroom Foraging</span>
+            </h1>
+            <p>
+              Mushroom foraging is the art and science of identifying and
+              collecting wild mushrooms.
+            </p>
+            <p>
+              It's a practice that combines outdoor exploration botanical
+              knowledge, and culinary adventure. Foragers venture into forests,
+              fields, and even urban green spaces to discover these hidden
+              treasures.
+            </p>
+            <p>
+              But beware – this hobby requires careful study and respect for
+              nature, as some mushrooms can be dangerous if misidentified.
+            </p>
+          </div>
         </div>
       </section>
-      <section class="wrapper" data-width="wide">
-        <div>
-          <h2>Connect with Nature</h2>
-          <p>
-            Experience the beauty of the great outdoors while foraging for
-            mushrooms with fellow enthusiasts.
-          </p>
-
-          <a href="#"
-            >Learn More
-
-            <span class=".visually-hidden">
-              about mushrooms with our helpful reference guide</span
-            >
-          </a>
+      <section class="section">
+        <div class="wrapper grid-flow">
+          <div class="flow">
+            <h2 class="section-heading">The joys of mushroom foraging</h2>
+            <p>
+              Foraging for mushrooms can be a rewarding experience for many
+              reasons. People may venture off into the woods to forage for
+              mushrooms because it allows them to connect with nature, enjoy the
+              thrill of the hunt, and savor the satisfaction of finding a hidden
+              culinary treasure.
+            </p>
+          </div>
+          <div class="equal-columns">
+            <article class="card grid-flow">
+              <img
+                src="./fungi-finders-assets-and-designs-final/assets/outdoor-exploration.webp"
+                alt=""
+              />
+              <h2>Outdoor Exploration</h2>
+              <p>
+                Mushroom foraging takes you off the beaten path and into the
+                heart of nature. Learn to read the landscape, identifying prime
+                mushroom habitats from lush forest floors to sun-dappled
+                meadows. Every expedition is a new adventure, with the potential
+                for exciting discoveries around every tree and under every log.
+              </p>
+            </article>
+            <article class="card grid-flow">
+              <img
+                src="./fungi-finders-assets-and-designs-final/assets/botanical-expertise.webp"
+                alt=""
+              />
+              <h2>Botanical Expertise</h2>
+              <p>
+                Dive into the intricate world of fungal biology. Discover the
+                unique structures of mushrooms, from caps to gills to spores.
+                Learn to use field guides and identification keys to distinguish
+                between species. With practice, you'll start to see the forest
+                in a whole new light, recognizing the vital role fungi play in
+                ecosystem health.
+              </p>
+            </article>
+            <article class="card grid-flow">
+              <img
+                src="./fungi-finders-assets-and-designs-final/assets/culinary-delight.webp"
+                alt=""
+              />
+              <h2>Culinary Delights</h2>
+              <p>
+                Transform your foraged finds into delectable dishes. Many edible
+                mushrooms offer unique flavors and textures that can elevate
+                your cooking. From the earthy porcini to the delicate
+                chanterelle, each variety brings its own character to the table.
+                Explore recipes, preservation techniques, and the joy of cooking
+                with nature's bounty.
+              </p>
+            </article>
+          </div>
         </div>
-        <img
-          src="./fungi-finders-assets-and-designs-final/assets/get-to-know.webp"
-          alt=""
-        />
+      </section>
+      <section class="section background-accent" data-padding="compact">
+        <div class="wrapper" data-width="narrow">
+          <div class="flow font-size-lg">
+            <h2 class="section-heading">
+              Start your <span class="text-brand">Foraging Adventure!</span>
+            </h2>
+            <p>
+              Whether you're seeking a deeper connection with nature, a new
+              outdoor hobby, or simply love the idea of finding your own food,
+              mushroom foraging offers a uniquely rewarding experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section background-extra-dark" data-padding="compact">
+        <div
+          class="wrapper equal-columns"
+          data-width="wide"
+          data-vertical-alignment="centered"
+          data-gap="large"
+        >
+          <img
+            src="./fungi-finders-assets-and-designs-final/assets/get-to-know.webp"
+            alt=""
+          />
+          <div class="font-size-lg flow">
+            <h2 class="section-heading">Get to know your mushrooms</h2>
+            <p>
+              Successful and safe mushroom foraging begins with a deep
+              understanding of the species you'll encounter in the wild - not
+              just what the edible ones look like, but their toxic look-alikes,
+              seasonal patterns, and preferred habitats.
+            </p>
+            <p>
+              It can feel like a big task, but
+              <strong>we’ve got a handy reference guide</strong>
+              to help you out!
+            </p>
+            <button>Reference Guide</button>
+          </div>
+        </div>
+      </section>
+      <section class="section" data-padding="compact">
+        <div
+          class="wrapper equal-columns"
+          data-width="wide"
+          data-vertical-alignment="centered"
+          data-gap="large"
+        >
+          <div class="flow font-size-lg">
+            <h2 class="section-heading">Connect with Nature</h2>
+            <p>
+              Experience the beauty of the great outdoors while foraging for
+              mushrooms with fellow enthusiasts.
+            </p>
+
+            <a href="#"
+              >Learn More
+
+              <span class="visually-hidden">
+                about mushrooms with our helpful reference guide</span
+              >
+            </a>
+          </div>
+          <img
+            src="./fungi-finders-assets-and-designs-final/assets/nature.webp"
+            alt=""
+          />
+        </div>
       </section>
     </main>
-    <footer class="wrapper" data-width="wide">
-      <h3>Happy Foraging!</h3>
-      <p>contact@fungifinders.com</p>
+    <footer>
+      <div class="wrapper" data-width="wide">
+        <h3>Happy Foraging!</h3>
+        <p>contact@fungifinders.com</p>
+      </div>
     </footer>
   </body>
 </html>
