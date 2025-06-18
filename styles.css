@@ -244,6 +244,24 @@
 }
 
 @layer components {
+  .skip-to-main:not(:focus) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  .skip-to-main {
+    top: 1rem;
+    left: 1rem;
+    padding: 1em;
+    position: absolute;
+    background: var(--background-accent-dark);
+    border-radius: var(--border-radius-3);
+    color: var(--text-high-contrast);
+  }
   .hero {
     text-align: center;
     font-size: var(--font-size-md);
